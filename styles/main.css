@@ -1,0 +1,317 @@
+* {
+  padding: 0;
+  margin: 0;
+  font-family: "SF Pro Text";
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  overflow-x: hidden;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 85px;
+  font-family: "SF Pro Text";
+  font-weight: 500;
+  font-size: 22px;
+}
+
+nav img {
+  margin-right: 20px;
+}
+
+.mainview {
+  position: relative;
+  height: 545px;
+  width: 100%;
+}
+
+.frontimg {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  object-position: -300px;
+}
+
+.textcontainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  position: absolute;
+}
+
+.textcontainer h1 {
+  font-family: "SF Pro Text";
+  font-weight: bold;
+  font-size: 4rem;
+  color: #42201b;
+  letter-spacing: -3px;
+  line-height: 80%;
+}
+.textcontainer span {
+  font-size: 2rem;
+  letter-spacing: 0;
+  font-family: "Script MT";
+  color: white;
+}
+
+section {
+  /* GLOBAL CHANGE */
+  max-width: 700px;
+  margin: 24px;
+  margin-top: 28px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100%;
+}
+
+section > p {
+  /* GLOBAL CHANGE */
+  margin-bottom: 36px;
+  font-family: "SF Pro Text";
+  font-weight: 200;
+  background-color: black;
+  font-size: 24px;
+  padding: 2px 12px;
+  color: white;
+}
+
+.first span {
+  font-size: 1.2rem;
+}
+
+.second {
+  background-color: rgba(28, 120, 141, 0.13);
+  border-left: 15px solid rgb(190, 190, 190);
+  width: 100%;
+  height: 100%;
+  display: block;
+  padding: 12px 0 12px 0;
+}
+
+.second h5 {
+  display: none;
+}
+
+.second h4 {
+  margin: 0 24px 0 24px;
+  font-family: "Sitara";
+  font-size: 1.3rem;
+  font-style: italic;
+  font-weight: normal;
+  font-display: swap;
+}
+
+.image-container {
+  display: flex;
+  gap: 20px;
+}
+
+.img-1 {
+  max-width: 473px;
+  height: 473px;
+}
+
+.img-1 img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+.img-2 {
+  display: none;
+  max-width: 273px;
+  height: 473px;
+}
+
+.img-2 img {
+  display: none;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+/*MENU*/
+.card {
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  border: 1px solid rgb(224, 224, 224);
+  width: 700px;
+  min-height: 500px;
+  background-color: white;
+}
+
+.card-nav {
+  display: flex;
+
+  box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.25);
+}
+
+.drink-button,
+.eat-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50px;
+  margin: 8px 12px;
+  cursor: pointer;
+}
+
+.drink-button {
+  width: 50%;
+  color: white;
+  background-color: #42201b;
+}
+
+.eat-button {
+  width: 50%;
+}
+
+.item-grid {
+  display: grid;
+  grid-auto-columns: 1fr;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 0px 0px;
+  grid-template-areas:
+    "."
+    ".";
+}
+
+.items {
+  display: flex;
+  flex-flow: row;
+  justify-content: space-between;
+  margin: 0 16px;
+}
+
+.eatitems {
+  display: none;
+}
+
+#d-item1,
+#e-item1 {
+  margin-top: 12px;
+}
+/*MENU END*/
+
+/* MAP */
+#findus {
+  font-size: 1.2rem;
+  margin-bottom: 12px;
+}
+
+iframe {
+  width: 700px;
+  height: 450px;
+}
+
+/* MAP END */
+
+/*FOOTER*/
+#spacer {
+  width: 100%;
+  height: 72px;
+}
+
+footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: #42201b;
+  height: 40vh;
+  width: 100%;
+}
+
+.main {
+  display: flex;
+  justify-content: space-around;
+}
+
+.buttons a {
+  color: white;
+  text-decoration: none;
+  margin: 3px;
+  transition: 200ms;
+}
+
+.buttons a:hover {
+  color: rgb(190, 190, 190);
+}
+
+.buttons {
+  display: flex;
+  flex-direction: column;
+  width: 200px;
+}
+
+.location {
+  display: flex;
+  align-items: center;
+}
+
+.location p {
+  color: white;
+  text-align: center;
+  font-weight: 200;
+}
+
+/*FOOTER END*/
+
+@media (min-width: 500px) {
+  .frontimg {
+    object-position: center;
+  }
+
+  .textcontainer {
+    display: flex;
+    justify-content: flex-start;
+    margin-left: 4rem;
+  }
+  .textcontainer h1 {
+    font-size: 5rem;
+  }
+
+  .second {
+    border-left: 5px solid rgb(190, 190, 190);
+  }
+
+  .second h5 {
+    padding-top: 10px;
+    display: block;
+    margin: 0 0 0 24px;
+    font-family: "SF Pro Text";
+    font-size: 1.2rem;
+    font-weight: 500;
+    width: 100%;
+  }
+
+  .img-2 {
+    display: block;
+  }
+  .img-2 img {
+    display: block;
+  }
+}
+
+@media (max-width: 700px) {
+  .card {
+    width: unset;
+    max-width: 700px;
+  }
+  iframe {
+    width: 90vw;
+    height: 450px;
+  }
+}

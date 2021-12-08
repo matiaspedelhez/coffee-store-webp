@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Melitta-Werke's Coffee Shop</title>
+    <link rel="stylesheet" href="./styles/main.css" />
+    <link rel="stylesheet" href="./styles/fonts.css" />
+  </head>
+  <body>
+    <nav>
+      <img
+        src="./img/melitta_werke_logo.svg"
+        alt="could not load the image"
+        class="logo"
+        height="32px"
+        width="32px"
+      />
+      <p class="logotext">Melitta-Werke</p>
+    </nav>
+    <div class="mainview">
+      <img src="./img/coffeimg.jpg" alt="" class="frontimg" />
+      <div class="textcontainer">
+        <h1><span>It's time for </span><br />the Coffee<br />Break</h1>
+      </div>
+    </div>
+
+    <section class="first our-coffee">
+      <p>OUR COFFEE</p>
+      <span
+        >We offer Colombian Coffee beans, which lorem ipsum dolor sit amet,
+        consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+        et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+        exercitation ullamco laboris nisi ut aliquip ex ea commodo
+        consequat.</span
+      >
+    </section>
+
+    <section class="second authors-note">
+      <h4>"A bad day with coffee is better than a good day without it"</h4>
+      <h5>Melitta-Werke's founder: Olivia Cooper</h5>
+    </section>
+
+    <section class="third images">
+      <div class="image-container">
+        <div class="img-1">
+          <img
+            src="./img/baristaholdingmug.jpg"
+            alt="could not load the image"
+          />
+        </div>
+        <div class="img-2">
+          <img
+            src="./img/basristaworking.jpeg"
+            alt="could not load the image"
+          />
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <p>MENU</p>
+      <div class="card">
+        <div class="card-nav">
+          <div class="drink-button" id="drink-button" onclick="toggleDrinks()">
+            <p class="drink-button-text">DRINK</p>
+          </div>
+          <div class="eat-button" id="eat-button" onclick="toggleEats()">
+            <p class="eat-button-text">EAT</p>
+          </div>
+        </div>
+
+        <!-- DRINK ITEMS HERE -->
+
+        <div class="items drinkitems" id="d-item1">
+          <div class="item-grid">
+            <h1>Capuccino</h1>
+            <p>1/3 milk froth, 1/3 steamed milk, 1/3 espresso</p>
+          </div>
+          <h1>$2.79</h1>
+        </div>
+        <div class="items drinkitems" id="d-item2">
+          <div class="item-grid">
+            <h1>Caffe Latté</h1>
+            <p>Streamed milk & espresso, with a bit of froth</p>
+          </div>
+          <h1>$2.79</h1>
+        </div>
+        <div class="items drinkitems" id="d-item3">
+          <div class="item-grid">
+            <h1>Caffe Mocha</h1>
+            <p>Streamed milk, espresso, chocolate & whipped cream</p>
+          </div>
+          <h1>$3.29</h1>
+        </div>
+        <div class="items drinkitems" id="d-item4">
+          <div class="item-grid">
+            <h1>Caffe Miel</h1>
+            <p>Streamed milk, espresso, honey & cinnamon</p>
+          </div>
+          <h1>$3.49</h1>
+        </div>
+        <div class="items drinkitems" id="d-item5">
+          <div class="item-grid">
+            <h1>Turtle</h1>
+            <p>Streamed milk, espresso, chocolate, caramel & whipped cream</p>
+          </div>
+          <h1>$3.49</h1>
+        </div>
+        <div class="items drinkitems" id="d-item6">
+          <div class="item-grid">
+            <h1>Jump Start</h1>
+            <p>Brewed coffee with added espresso</p>
+          </div>
+          <h1>$3.29</h1>
+        </div>
+
+        <!-- EAT ITEMS HERE -->
+
+        <div class="items eatitems" id="e-item1">
+          <div class="item-grid">
+            <h1>Chocolate cake</h1>
+            <p>Fluffy & tender-moist chocolate cake, with chocolate sauce</p>
+          </div>
+          <h1>$2.29</h1>
+        </div>
+        <div class="items eatitems" id="e-item2">
+          <div class="item-grid">
+            <h1>Pancakes</h1>
+            <p>Lemon berry | red velvet | gluten free</p>
+          </div>
+          <h1>$4.49</h1>
+        </div>
+        <div class="items eatitems" id="e-item3">
+          <div class="item-grid">
+            <h1>French Toast</h1>
+            <p>Tiramisu | apple pie | crème brulée</p>
+          </div>
+          <h1>$4.79</h1>
+        </div>
+        <div class="items eatitems" id="e-item4">
+          <div class="item-grid">
+            <h1>Crepes</h1>
+            <p>Peach pleeease | cocoa almond butter | gluten free</p>
+          </div>
+          <h1>$4.79</h1>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <p>WHERE TO FIND US</p>
+      <div><p id="findus">Find us at the Spectrum Center</p></div>
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3259.249771034658!2d-80.8415154!3d35.2251519!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8856a0243e9c7d45%3A0x76230b8d88293efa!2sSpectrum%20Center!5e0!3m2!1ses-419!2sar!4v1623693967545!5m2!1ses-419!2sar"
+        style="border: 0"
+        allowfullscreen=""
+        loading="lazy"
+      ></iframe>
+    </section>
+
+    <div id="spacer"></div>
+
+    <footer>
+      <div class="main">
+        <div class="buttons">
+          <a href="#">Work with us</a>
+          <a href="#">About Melitta-Werke</a>
+          <a href="#">Send us a message</a>
+        </div>
+        <div class="location">
+          <p>
+            333 E Trade St. Charlotte,<br />
+            NC 28202, EE. UU.
+          </p>
+        </div>
+      </div>
+    </footer>
+    <script src="./scripts/menu.js"></script>
+  </body>
+</html>
